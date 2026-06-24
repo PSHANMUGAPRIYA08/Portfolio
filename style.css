@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #0f172a;
+    color: white;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #020617;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Home */
+.home {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.home span {
+    color: #38bdf8;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #38bdf8;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Skills */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills-container div {
+    background: #1e293b;
+    margin: 10px;
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+
+/* Projects */
+.project-card {
+    background: #1e293b;
+    margin: 20px auto;
+    padding: 25px;
+    width: 80%;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.features {
+    text-align: left;
+    max-width: 600px;
+    margin: 15px auto;
+}
+
+.project-buttons {
+    margin-top: 15px;
+}
+
+.project-buttons .btn {
+    margin: 10px;
+}
+
+.secondary {
+    background: transparent;
+    border: 2px solid #38bdf8;
+    color: #38bdf8;
+}
+
+/* Footer */
+footer {
+    background: #020617;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .project-card {
+        width: 95%;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        margin-top: 10px;
+    }
+}
+.skills-category {
+    margin-bottom: 30px;
+}
+
+.skills-category h3 {
+    margin-bottom: 15px;
+    color: #38bdf8;
+}
+/* Profile Image */
+.profile-pic {
+    width: 130px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* Home Buttons */
+.home-buttons {
+    margin-top: 20px;
+}
+
+/* Fade Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 1s;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Dark Mode */
+.light-mode {
+    background: white;
+    color: black;
+}
+
+/* Toggle Button */
+.toggle-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
